@@ -1,0 +1,10 @@
+.idea
+public
+source/tags
+vendor
+.bundle
+Gemfile.lock
+.env
+node_modules
+dist
+.sass-cache

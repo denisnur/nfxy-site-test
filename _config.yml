@@ -1,0 +1,37 @@
+---
+url:         https://www.denisn.com
+future:      false
+lsi:         false
+markdown:    kramdown
+permalink:   pretty
+incremental: false
+
+#timezone: Europe/Berlin
+
+root:        /
+source:      source
+destination: public
+plugins_dir: plugins
+highlighter: rouge
+
+include:      ["_redirects", "_headers"]
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+title: "Denis Nurmukhametov"
+description: "Test."
+keywords: "mac, tips, wordpress, jekyll, ruby, php, linux, ubuntu, vps, soft"
+
+githuburl: "https://github.com/denisnur/nfxy-site-test/blob/master/source/_posts"
+tag_page_layout: tag_page
+tag_page_dir: tags
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      image: https://static.denisn.com/images/calvin.png
