@@ -1,16 +1,71 @@
 ---
 layout: default
-description: Описание опыта использования различных программ и веб-сервисов. Личные рекомендации и критика.
+description: Russischsprachige LGBT in Deutschland Русскоговорящие ЛГБТ в Германии Russian Queer in Germany
 grouptype: index
 ---
-{% assign first_post = site.posts.first %}
-<h1 class="title"><a href="{{ site.url }}{{first_post.url}}">{{ first_post.title }}</a></h1>
-<div id="metainfo"><span class="date">{{ first_post.date | date_to_long_string }}</span></div>
-<div class="post">
-{{ first_post.content }}
-</div>
-<div class="meta">
-  <div class="pagination">
-  <p class="allpostsmeta"><a href="{{ site.url }}/articles.html" title="Список всех статей" rel="nofollow">Список всех статей</a></p>
+<div class="content">
+  <div class="content__screen">
+    <div class="screen__center">
+      <div class="screen__holder">
+        <div class="screen__wrapper">
+          <img class="screen__image" src="/static/img/screen.jpg" alt="" width="1229" height="451">
+        </div>
+      </div>
+      <div class="screen__wrapper">
+        {%- include menu.html -%}
+      </div>
+    </div>
+  </div>
+  <div class="content__actual">
+    <div class="actual__col">
+      <div class="actual__calendar">
+        <h2>Ближайшие события</h2>
+
+        <div class="calender_row">
+          <a href="">
+            <ul>
+              <li class="calendar__date">03.07.2015<br/>19:00</li>
+              <li class="calendar__title">Встреча квартирантов</li>
+            </ul>
+          </a>
+        </div>
+        <div class="calender_row">
+          <a href="">
+            <ul>
+              <li class="calendar__date">02.08.2015<br/>10:00</li>
+              <li class="calendar__title">CSD Гамбург</li>
+            </ul>
+          </a>
+        </div>
+        <div class="calender_row">
+          <a href="">
+            <ul>
+              <li class="calendar__date">24.10.2019<br/>11:00</li>
+              <li class="calendar__title">Ежегодное общее собрание Квартиры в Берлине. Schwulenberatung, Nieburnstrasse, с 11 до 18</li>
+            </ul>
+          </a>
+        </div>
+        <a href="">Остальные события</a>
+      </div>
+    </div>
+    <div class="actual__col">
+      <div class="actual__news">
+        <h2>Последние новости</h2>
+
+        <div class="news_row">
+          <a class="news__tag" href="">Акции</a>, <a class="news__tag" href="">О нас</a><br/>
+          <a class="news__title" href="">Квартира протестует против Елены Мизулиной на конференции журнала "Compact" в Лейпциге</a>
+        </div>
+        <div class="news_row">
+          <a class="news__tag" href="">Миграция</a><br/>
+          <a class="news__title" href="">Первый россиянин-гей получил политическое убежище в Германии</a>
+        </div>
+        <div class="news_row">
+          <a class="news__tag">Акции</a>, <a class="news__tag">О нас</a><br/>
+          <a class="news__title" href="">С нас хватит!<br/>Демонстрация в Берлине против российских гомофобных законов.</a>
+        </div>
+        <a href="">Остальные новости</a>
+      </div>
+    </div>
   </div>
 </div>
